@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telagana-rtc</title>
+</head>
+
+<body style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <header style="background-color: rgb(204, 204, 233);text-align: center; border: 2px solid;border-radius: 20px;width: 55%;height: 100%;">
+        <h1 style="color: rgb(68, 22, 194);font-family: 'Times New Roman', Times, serif;">TELENGA STATE ROAD TRANSPORT CORPORATION</h1>
+        <h2 style="color: black;font-family: 'Times New Roman', Times, serif;">GENERAL BUS PASS APPLICATION</h2>
+    </header><br><br>
+    <main>
+        <fieldset style="background-color: rgba(245, 245, 220, 0.753); width: 100%;border: 2px solid; border-radius: 10px;">
+            <legend style="background-color: blue;color: white; height: 30px;">APPLICANT DETAILS</legend>
+            <table cellspacing="10">
+                <tr>
+                    <td><label for="name ">Name
+                <font color="red ">*</font>
+                </label>
+                    </td>
+                    <td><input type="text" id="name" max="20" required>
+                        <br> <span style="color: red;">(Mximum characters:20)</span>
+                        <br></td>
+                    <td><label for="Father">Father's name<font color="red">*</font></label>
+                    </td>
+                    <td><input type="text" id="Father" max="20" required></td>
+                </tr>
+                <tr>
+                    <td><label for="date-of-birth ">Date of birth
+                <font color="red ">*</font><br><span style="color: blue; size: 1px; ">(dd/mm/yyyy)</span>
+                </label>
+                    </td>
+                    <td><input type="text " id="date-of-birth " required></td>
+                    <td><label for="Gender">Gender <font color="red ">*</font></label>
+                    </td>
+                    <td><input type="radio" id="Male " name="gender" value="Male">
+                        <label for="Male">Male</label>
+                        <input type="radio" id="Female" name="gender" value="Female">
+                        <label for="Female">Female</label></td>
+                </tr>
+                <tr>
+                    <td> <label for="ages">Age AS On: </label>
+                    </td>
+                    <td><input type="number" size="0.5" min="1" max="60" id="years">
+                        <label for="years">Year(s)</label>
+                        <input type="number" size="0.5" min="1" max="12" id="months">
+                        <label for="months">Month(s)</label>
+                        <input type="number" size="0.5" min="1" max="31" id="days">
+                        <label for="days">Day(s)</label></td>
+                    <td><label for="adhar">Aadhar Number <font color="red">*</font></label>
+                    </td>
+                    <td> <input type="number" id="adhar" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Whatsapp ">Whatsapp Number
+            <font color="red ">*</font>
+            </label>
+                    </td>
+                    <td><input type="number " id="Whatsapp " required></td>
+                    <td><label for="email ">Email id <font color="red ">*</font></label>
+                    </td>
+                    <td><input type="email " id="email " required></td>
+                </tr>
+
+            </table>
+            <label for="photo">photo <font color="red">*</font></label>
+            <input type="file" id="photo" required>
+        </fieldset>
+        <fieldset style="background-color: rgba(245, 245, 220, 0.753); width: 100%;border: 2px solid; border-radius: 10px;">
+            <legend style="background-color: blue;color: white; height: 30px;">
+                Resdential Address Details
+            </legend>
+            <table cellspacing="10">
+                <tr>
+                    <td><label for="Details">Applicant's Address <font color="red">*</font></label>
+                    </td>
+                    <td><textarea rows="5"></textarea>
+                        <br><span style="color: red;">(Mximum characters:20)</span></td>
+                    <td> <label for="District">District<font color="red">*</font> </label>
+                    </td>
+                    <td> <select><option>Hyderabad</option></select></td>
+                </tr>
+                <tr>
+                    <td><label for="Mandal">Mandal <font color="red">*</font></label>
+                    </td>
+                    <td><select><option>Hyderabad</option></select></td>
+                    <td><label for="village">village<font color="red">*</font></label>
+                    </td>
+                    <td> <select><option>Hyderabad</option><option>Hyderabad</option></select></td>
+                </tr>
+            </table>
+            <label for="Pincode">Pincode<font color="red">*</font></label>
+            <input type="number" id="Pincode" required>
+        </fieldset>
+        <fieldset style="background-color: rgba(245, 245, 220, 0.753); width: 100%;border: 2px solid; border-radius: 10px;">
+            <legend style="background-color: blue;color: white; height: 30px;">Pass Type Details</legend>
+            <label for="City">City<font color="red">*</font></label>
+            <select><option>Hyderabad</option></select>
+            <br><br> <label for="pass-type">Pass Type
+            <font color="red">*</font>
+            </label>
+            <select>
+                <option selected disabled>--select--</option>
+                <option>GENERAL PASS</option>
+                <option>GENERAL ORDINARY ROUTE PASS MLTY</option>
+                <option>GENERAK METRO ROUTE PASS MLTY</option>
+                <option>ORDINARY PASS</option>
+                <option>METRO EXPRESS PASS</option>
+                <option>ETRO EXPRESS PASS</option>
+            </select>
+        </fieldset>
+        <fieldset style="background-color: rgba(245, 245, 220, 0.753); width: 100%;border: 2px solid; border-radius: 10px;">
+            <legend style="background-color: blue;color: white; height: 30px;">Mode Of Payment&Pass collection</legend>
+            <label for="payment">Payment mode<font color="red">*</font></label>
+            <select>
+                <option>select payment mode</option>
+                <option>payment at counter</option>
+            </select><br><br>
+            <label for="pass">pass delivery mode<font color="red">*</font></label>
+            <select>
+            <option>select pas delivery mode</option>
+            <option>collect at counter</option>
+            </select>
+            <br><br>
+            <label for="center">center at which you want to collect pass<font color="red">*</font></label>
+            <select>
+                <option selected disabled>--select--</option>
+                <option>RTC ABIDS--HYD[1/09/2025]</option>
+                <option>RTC AFZULGNJ--HYD[1/09/2025]</option>
+                <option>RTC ARMGAR--HYD[1/09/2025]</option>
+                <option>RTC AIRPORT--HYD[1/09/2025]</option>
+                <option>RTC BALANAGAR--HYD[1/09/2025]</option>
+                <option>RTC BORABANDA--HYD[1/09/2025]</option>
+                <option>RTC CBD--HYD[1/09/2025]</option>
+                <option>RTC CHARMINAR--HYD[1/09/2025]</option>
+                <option>RTC DILSUKHNAGAR--HYD[1/09/2025]</option>
+                <option>RTC ECIL--HYD[1/09/2025]</option>
+                <option>RTC FOOREQNAGAR--HYD[1/09/2025]</option>
+                <option>RTC GATKESKAR--HYD[1/09/2025]</option>
+                <option>RTC HAYITHNAGAR--HYD[1/09/2025]</option>
+                <option>RTC IBRAHIMPATNAM--HYD[1/09/2025]</option>
+                <option>RTC JBS--HYD[1/09/2025]</option>
+                <option>RTC KACHIGUDA--HYD[1/09/2025]</option>
+                <option>RTC KOTI--HYD[1/09/2025]</option>
+                <option>RTC KPHB--HYD[1/09/2025]</option>
+            </select>
+        </fieldset><br><br>
+
+        <center><button style="align-items: center; background-color: brown;">SUBMIT</button></center>
+</body>
+
+</html>
