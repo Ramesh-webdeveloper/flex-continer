@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child>h1 {
+            position: absolute;
+            top: 750px;
+        }
+        
+        .navbar {
+            display: flex;
+            gap: 70px;
+            justify-content: space-evenly;
+            background-color: aqua;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .navber1 {
+            display: flex;
+            justify-content: space-evenly;
+            width: 300px;
+        }
+        
+        .parent1 {
+            display: flex;
+            justify-content: center;
+            margin-left: 15%;
+            margin-right: 15%;
+            padding-top: 5%;
+        }
+        
+        .matter {
+            padding-left: 5%;
+            align-items: center;
+        }
+        
+        .parent3 {
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+        }
+        
+        .a {
+            margin-top: 2%;
+        }
+        
+        .c {
+            color: grey;
+        }
+        
+        .child2 {
+            margin-left: 18%;
+        }
+        
+        input {
+            height: 40px;
+            margin-top: 2%;
+        }
+        
+        button {
+            margin-top: 2%;
+            height: 45px;
+        }
+        
+        .form {
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 20%;
+            margin-bottom: 20%;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">Gourmet au Catering</div>
+        <div class="navber1">
+            <a style="color: brown;">About</a>
+            <a style="color: brown;">Menu</a>
+            <a style="color: brown;">Contact</a>
+        </div>
+    </div>
+    <div class="parent">
+        <div class="child">
+            <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="">
+            <h1>Le Catering</h1>
+        </div>
+        <div class="parent1">
+            <div class="child1">
+                <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="">
+            </div>
+            <div class="matter">
+                <center>
+                    <h2 style=>About Catering</h2>
+                    <br>
+                    <p style="color: blue;">Tradition since 1889</p>
+                    <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+                    <p id="gp" style="color: blue;">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </center>
+            </div>
+        </div>
+        <div class="parent3">
+            <div class="matter2">
+                <h2>Our Menu</h2>
+                <p class="a">Bread Basket</p>
+                <p class="c">Assortment of fresh baked fruit breads and muffins 5.50</p>
+                <p class="a">Honey Almond Granola with Fruits</p>
+                <p class="c">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                <p class="a">Belgian Waffle</p>
+                <p class="c">Vanilla flavored batter with malted flour 7.50</p>
+                <p class="a">Scrambled eggs</p>
+                <p class="c">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50
+
+                </p>
+                <p class="a">Blueberry Pancakes</p>
+                <p class="c">With syrup, butter and lots of berries 8.50</p>
+            </div>
+            <div class="child2">
+                <img src="https://www.w3schools.com/w3images/tablesetting.jpg" alt="">
+            </div>
+        </div>
+        <div class="form">
+            <h2>Contact</h2>
+            <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.
+
+            </p>
+            <p style="color: rgb(22, 87, 48);"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
+            <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:
+
+            </p>
+            <form action="">
+                <input type="text" placeholder="Name" style="width:100% ;">
+                <br>
+                <input type="text" placeholder="How many people" style="width:100% ;">
+                <br>
+                <input type="datetime-local" style="width:100% ;">
+                <br>
+                <input type="text" placeholder="message/special requirement" style="width:100% ;">
+                <br>
+                <button style="width: 150px;" color="black">Send message</button>
+            </form>
+        </div>
+
+</body>
+
+</html>
