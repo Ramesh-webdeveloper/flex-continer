@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Food Blog</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .sidebar {
+            width: 250px;
+            background-color: #fff;
+            padding: 20px;
+            position: fixed;
+            height: 100%;
+            border-right: 1px solid #ddd;
+        }
+        
+        .main {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        
+        .blog-card {
+            background-color: #fff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blog-card img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .blog-card-content {
+            padding: 15px;
+        }
+        
+        .about {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tags span {
+            background-color: #f1f1f1;
+            display: inline-block;
+            margin: 3px;
+            padding: 5px 8px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #777;
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+        }
+        /* Responsive Design */
+        
+        @media screen and (max-width: 800px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                border: none;
+            }
+            .main {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="w3-light-grey">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>My Food</h2>
+        <p><a href="#" class="w3-bar-item w3-button">Home</a></p>
+        <p><a href="#" class="w3-bar-item w3-button">Recipes</a></p>
+        <p><a href="#" class="w3-bar-item w3-button">About</a></p>
+        <p><a href="#" class="w3-bar-item w3-button">Contact</a></p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <h1>Welcome to My Food Blog</h1>
+        <p>Discover my favorite recipes and food adventures!</p>
+
+        <!-- Blog Posts -->
+        <div class="blog-card">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="Sandwich">
+            <div class="blog-card-content">
+                <h3>The Perfect Sandwich</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://www.w3schools.com/w3images/steak.jpg" alt="Steak">
+            <div class="blog-card-content">
+                <h3>Let Me Tell You About This Steak</h3>
+                <p>Once again, some random text to lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://www.w3schools.com/w3images/pasta.jpg" alt="Pasta">
+            <div class="blog-card-content">
+                <h3>Robust Wine and Vegetable Pasta</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="about">
+            <h3>About Me</h3>
+            <img src="https://www.w3schools.com/w3images/chef.jpg" alt="Me" style="width:100%; border-radius:8px;">
+            <p>Hello! I'm a passionate foodie who loves exploring flavors and sharing recipes from around the world.</p>
+        </div>
+
+        <!-- Tags Section -->
+        <div class="about">
+            <h3>Popular Tags</h3>
+            <div class="tags">
+                <span>Food</span>
+                <span>Healthy</span>
+                <span>Dessert</span>
+                <span>Drinks</span>
+                <span>Lunch</span>
+                <span>Dinner</span>
+                <span>Snacks</span>
+                <span>Vegan</span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2025 My Food Blog | Designed with ❤️ using HTML & CSS</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
